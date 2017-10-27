@@ -93,7 +93,7 @@
 		document.getElementById('times').innerHTML=year+"年"+month+"月"+day+"日"+hours+"时"+minutes+"分";
 
 	}	
-
+		startTime(); //先运行一遍，之后隔60000ms（一分钟）更新一次
 		setTimeout('startTime()',60000);
 		
 
