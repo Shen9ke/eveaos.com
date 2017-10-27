@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+
+
+<title>Welcome to GitHub Pages | eveaos.com</title>
+<meta property="og:title" content="Welcome to GitHub Pages" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Websit" />
+<meta name="Robots" contect= "all" />
+<meta property="og:description" content="Websit" />
+<link rel="canonical" href="http://eveaos.com/" />
+<meta property="og:url" content="http://eveaos.com/" />
+<meta property="og:site_name" content="eveaos.com" />
+<script type="application/ld+json">
+{"name":"eveaos.com","description":"Websit","author":null,"@type":"WebSite","url":"http://eveaos.com/","image":null,"publisher":null,"headline":"Welcome to GitHub Pages","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/markdown.js"></script>
+<!-- End -->
+
+    <meta name="description" content="Websit"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">	
+	
+	<style type="text/css">
+	
+	.bah{position:static<!--absolute-->;bottom:0;left:50%;font-size:14px;margin-left: 50%;;}
+	
+	</style>
+
+
+
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">eveaos.com</h1>
+      <h2 class="project-tagline">Websit</h2>
+      
+        <a href="https://github.com/Shen9ke/eveaos.com" class="btn">View on GitHub</a>
+      
+      
+    </section>
+
+    <section class="main-content">
+      <h2 id="welcome-to-github-pages">Welcome to GitHub Pages</h2>
+		<div class="md-text">
+		<script>$.get("./content/part_1.md", function(text) {
+		console.log(text);
+		document.getElementById('content1').innerHTML =
+		marked(text);		//转换为html
+		
+		});
+		</script>
+		<div id="content1"></div>
+		</div>
+		
+		
+
+	
+		
+		
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/Shen9ke/eveaos.com">eveaos.com</a> is maintained by <a href="https://github.com/Shen9ke">Shen9ke</a>.</span>
+        
+      
+
+	  
+	  
+      </footer>
+    </section>
+	<div id="times"></div>
+	<script >  //获取时间
+	function startTime()
+	{
+		var today=new Date();
+		var year=today.getFullYear();
+		var month=today.getMonth();
+		var day=today.getDay();
+		var hours=today.getHours();
+		var minutes=today.getMinutes();
+		var seconds=today.getSeconds();
+		// add a zero in front of numbers<10
+		month=checkTime(month);
+		day=checkTime(day);
+		hours=checkTime(hours)
+		minutes=checkTime(minutes)
+		console.log("today",today.getDay());
+		document.getElementById('times').innerHTML=year+"年"+month+"月"+day+"日"+hours+"时"+minutes+"分";
+
+	}	
+
+		setTimeout('startTime()',60000);
+		
+
+		function checkTime(i)
+		{
+		if (i<10) 
+		  {i="0" + i}
+		  return i;
+		}
+	</script>
+    <div class="bah">
+					2017 @ eveaos.com 
+	</div>
+			
+  </body>
+</html>
